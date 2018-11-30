@@ -1,0 +1,37 @@
+<html>
+    <head>
+        <title>SteamsWorks Wishlist crawler</title>
+        <style>
+        .hidden {
+            display: none;
+        }
+        img {
+            width: 30px;
+            height: 30px;
+            float: right;
+            position: relative;
+            top: -15px;
+        }
+        div {
+            margin-bottom: 10px;
+        }
+        </style>
+    </head>
+    <body>
+        <h1>SteamsWorks Wishlist crawler</h1>
+        <div>
+            SteamID: <span id="steamId"></span> ( <a href="" id="optionPage">Go to options</a>)
+        </div>
+        <div>
+            <button id="startCrawl">Launch crawl</button>&nbsp;&nbsp;
+            <button id="clearBt">Clear Storage</button>
+            <img id="loader" src="loading_sm.gif" class="hidden"/>
+        </div>
+        <div id="resume" class="hidden">
+            Last generate: <label id="lastdate"></label>
+            At time: <label id="endtime"></label>
+            <a id="getCSVLast">Get Data file</button>
+        </div>
+        <script src="popup.js"></script>
+    </body>
+</html>
